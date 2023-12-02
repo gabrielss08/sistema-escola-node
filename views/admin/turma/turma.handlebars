@@ -1,0 +1,30 @@
+<main>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h2>Lista de Turmas</h2>
+            <hr>
+            <a href="/rota_turma/turma/add">
+                <button class="btn btn-success">Nova turma</button></a>
+            {{#each turmas}}
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h4><b>ID:</b>{{id_turma}}</h4>
+                    <small><b>Descrição:</b> {{descricao}} </small><br>
+                   <!--Botão para editar alunos-->
+                    <a href="/rota_turma/editar_turma/{{id_turma}}">
+                        <button class="btn btn-success mt-3">
+                            Editar turma
+                        </button>
+                    </a>
+                    <!--botão para deletar aluno-->
+                    <a href="/rota_turma/deletar_turma/{{id_turma}}">
+                        <button class="btn btn-danger mt-3">
+                            Deletar turma
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</main>

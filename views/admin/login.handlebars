@@ -1,0 +1,17 @@
+<!-- views/login.handlebars -->
+<div class="geral">
+<div class="container">
+<div class="inputs">
+<form action="/auth/login" method="POST">
+<input type="text" name="username" placeholder="Nome de Usuário"
+required> <br>
+<input type="password" name="senha" placeholder="Senha" required>
+<br>
+<button type="submit">Entrar</button>
+</form>
+</div>
+<p style="color: white;">Não possui uma conta? Cadastre-se aqui</p>
+<a href="/auth/register"><button type="submit">Cadastrar</button></a>
+</div>
+</div>
+<p>{{error}}</p>

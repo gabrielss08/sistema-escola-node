@@ -1,0 +1,20 @@
+<div class="geral">
+<div class="container">
+<div class="inputs">
+<h1>Registro</h1>
+<form action="/auth/register" method="POST">
+<input type="text" name="username" placeholder="Nome de Usuário"
+required> <BR>
+<input type="email" name="email" placeholder="E-mail" required>
+<BR>
+<input type="password" name="senha" placeholder="Senha" required>
+<BR>
+<button type="submit">Registrar</button>
+</form>
+</div>
+<p>{{error}}</p>
+<a href="/auth/login"><p style="color: white;">Já tem uma conta? Faça
+login aqui</p></a>
+</div>
+</div>
+
